@@ -1,0 +1,22 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.TextField?>
+<BorderPane prefHeight="500" prefWidth="800" fx:controller="sample.view.MainMenu"
+            xmlns:fx="http://javafx.com/fxml">
+    <ImageView>
+        <Image url="@MainBackground.jpg"></Image>
+    </ImageView>
+    <center>
+        <VBox translateX="80" spacing="10" alignment="CENTER_LEFT">
+            <Button style="-fx-background-color: #ebeb34" prefWidth="100" onMouseClicked="#startRegisterPage">Register</Button>
+            <Button style="-fx-background-color: #ebeb34" prefWidth="100" onMouseClicked="#startLoginPage">Login</Button>
+            <Button style="-fx-background-color: #ebeb34" prefWidth="100" onMouseClicked="#startGamePage">New Game</Button>
+            <Button style="-fx-background-color: #ebeb34" prefWidth="100" onMouseClicked="#startScoreboardPage">Scoreboard</Button>
+            <Button style="-fx-background-color: #ebeb34" prefWidth="100" onMouseClicked="#startProfilePage">Profile</Button>
+            <Button style="-fx-background-color: #ebeb34" prefWidth="100" onMouseClicked="#exit">Exit</Button>
+        </VBox>
+    </center>
+</BorderPane>
